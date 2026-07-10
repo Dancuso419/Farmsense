@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Stylised rolling farmland at golden hour with crop rows and palm trees">
+    <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f6c79f"/>
+            <stop offset="0.5" stop-color="#fcddc6"/>
+            <stop offset="1" stop-color="#f8d3b4"/>
+        </linearGradient>
+        <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#fff4e6"/>
+            <stop offset="0.6" stop-color="#ffe1bd"/>
+            <stop offset="1" stop-color="#ffd39e" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#6f9576"/>
+            <stop offset="1" stop-color="#5c8465"/>
+        </linearGradient>
+        <linearGradient id="hillMid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4d7659"/>
+            <stop offset="1" stop-color="#3f6449"/>
+        </linearGradient>
+        <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#345239"/>
+            <stop offset="1" stop-color="#264031"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Sky -->
+    <rect width="1440" height="900" fill="url(#sky)"/>
+    <!-- Sun glow -->
+    <circle cx="1080" cy="250" r="360" fill="url(#sun)"/>
+    <circle cx="1080" cy="250" r="120" fill="#fff1dd"/>
+
+    <!-- Birds -->
+    <g stroke="#7a5a3f" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5">
+        <path d="M300 180 q14 -12 28 0 q14 -12 28 0"/>
+        <path d="M380 150 q10 -9 20 0 q10 -9 20 0"/>
+        <path d="M250 230 q10 -9 20 0 q10 -9 20 0"/>
+    </g>
+
+    <!-- Far hills -->
+    <path d="M0 470 C240 420 430 460 720 445 C1010 430 1230 470 1440 440 L1440 900 L0 900 Z" fill="url(#hillFar)"/>
+    <!-- Mid hills -->
+    <path d="M0 560 C260 510 520 545 760 540 C1040 534 1250 575 1440 545 L1440 900 L0 900 Z" fill="url(#hillMid)"/>
+
+    <!-- Palm trees on the ridge -->
+    <g fill="#2c4835">
+        <g transform="translate(170,560)">
+            <rect x="-6" y="-70" width="12" height="72" rx="4"/>
+            <path d="M0 -70 C-46 -84 -78 -70 -96 -50 C-64 -66 -30 -70 0 -70Z"/>
+            <path d="M0 -70 C46 -84 78 -70 96 -50 C64 -66 30 -70 0 -70Z"/>
+            <path d="M0 -70 C-30 -110 -22 -142 0 -166 C22 -142 30 -110 0 -70Z"/>
+            <path d="M0 -70 C-58 -96 -74 -128 -76 -158 C-50 -130 -22 -104 0 -70Z"/>
+            <path d="M0 -70 C58 -96 74 -128 76 -158 C50 -130 22 -104 0 -70Z"/>
+        </g>
+        <g transform="translate(1250,545) scale(0.82)">
+            <rect x="-6" y="-70" width="12" height="72" rx="4"/>
+            <path d="M0 -70 C-46 -84 -78 -70 -96 -50 C-64 -66 -30 -70 0 -70Z"/>
+            <path d="M0 -70 C46 -84 78 -70 96 -50 C64 -66 30 -70 0 -70Z"/>
+            <path d="M0 -70 C-30 -110 -22 -142 0 -166 C22 -142 30 -110 0 -70Z"/>
+            <path d="M0 -70 C-58 -96 -74 -128 -76 -158 C-50 -130 -22 -104 0 -70Z"/>
+            <path d="M0 -70 C58 -96 74 -128 76 -158 C50 -130 22 -104 0 -70Z"/>
+        </g>
+    </g>
+
+    <!-- Near field with crop rows -->
+    <path d="M0 620 C300 585 560 620 760 615 C1010 609 1240 640 1440 610 L1440 900 L0 900 Z" fill="url(#hillNear)"/>
+    <g stroke="#3d6047" stroke-width="4" opacity="0.55" fill="none">
+        <path d="M720 640 L120 900"/>
+        <path d="M720 640 L360 900"/>
+        <path d="M720 640 L600 900"/>
+        <path d="M720 640 L840 900"/>
+        <path d="M720 640 L1080 900"/>
+        <path d="M720 640 L1320 900"/>
+    </g>
+    <g stroke="#436a4e" stroke-width="3" opacity="0.4" fill="none">
+        <path d="M0 700 C400 685 1000 690 1440 675"/>
+        <path d="M0 770 C400 752 1000 758 1440 745"/>
+        <path d="M0 850 C400 835 1000 840 1440 828"/>
+    </g>
+</svg>

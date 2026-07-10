@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#3B694C" />
+    <meta name="description" content="FarmSense — offline AI farming assistant for smallholder farmers in Southeast Nigeria. Diagnose crop disease from a photo or a description, no internet needed." />
+    <title>FarmSense — Your farm's expert, offline</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Mark JS available before paint so reveals don't flash visible-then-hidden -->
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="FarmSense home">
+        <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 4 13c0-4 3-7 7-8 0 5-3 8-7 8"/>
+                <path d="M11 20c0-6 3-11 9-13"/>
+            </svg>
+        </span>
+        <span class="brand-name">FarmSense</span>
+    </a>
+    <nav class="nav-menu" id="nav-menu" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#crops">Crops</a>
+        <a href="#offline">Offline</a>
+        <button class="btn btn-solid nav-menu-cta" data-open-chat>Ask FarmSense</button>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grass" aria-hidden="true"></div>
+        <div class="hero-bg" aria-hidden="true">
+            <svg class="hero-leaf hero-leaf-1" viewBox="0 0 120 120" fill="none" stroke="#FCDDC6" stroke-width="2" opacity="0.28">
+                <path d="M60 110C30 100 15 70 20 30 60 40 90 70 60 110Z"/>
+                <path d="M40 45C48 65 55 85 58 105"/>
+            </svg>
+            <svg class="hero-leaf hero-leaf-2" viewBox="0 0 120 120" fill="none" stroke="#FCDDC6" stroke-width="2" opacity="0.2">
+                <path d="M60 110C30 100 15 70 20 30 60 40 90 70 60 110Z"/>
+                <path d="M40 45C48 65 55 85 58 105"/>
+            </svg>
+            <svg class="hero-sprout" viewBox="0 0 140 160" fill="none" stroke="#FCDDC6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path class="sprout-stem" d="M70 158 C70 120 70 90 70 66"/>
+                <path class="sprout-leaf sprout-leaf-l" d="M70 92 C46 92 30 76 30 52 C56 52 70 68 70 92Z"/>
+                <path class="sprout-leaf sprout-leaf-r" d="M70 74 C94 74 110 58 110 34 C84 34 70 50 70 74Z"/>
+            </svg>
+        </div>
+
+        <div class="hero-inner">
+            <span class="eyebrow">Offline AI · English, Igbo, Yoruba &amp; Hausa</span>
+            <h1 class="hero-title">Your farm's<br><em>expert</em>, offline.</h1>
+            <p class="hero-sub">
+                Snap a photo of a sick crop or just describe what you see.
+                FarmSense diagnoses the disease and tells you how to treat it —
+                with no internet, right here on the field.
+            </p>
+            <div class="hero-actions">
+                <button class="btn btn-apricot btn-lg" data-open-chat>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Ask FarmSense
+                </button>
+                <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+            </div>
+            <ul class="hero-trust">
+                <li>🌱 6 major Nigerian crops</li>
+                <li>📷 Photo diagnosis</li>
+                <li>📴 Works with no signal</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="how" id="how">
+        <div class="section-head" data-reveal="wipe">
+            <h2 class="section-title">Three steps to a healthier harvest</h2>
+            <p class="section-lede">No forms, no waiting for an extension officer. Just ask.</p>
+        </div>
+
+        <ol class="steps">
+            <li class="step" data-reveal="grow" style="--i:0">
+                <div class="step-icon" aria-hidden="true">
+                    <span class="step-badge">1</span>
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                </div>
+                <h3>Describe or snap</h3>
+                <p>Type your crop's symptoms in any language, or take a photo of the leaf, stem, or fruit.</p>
+                <p class="step-eg">“My cassava leaves have brown spots and are curling up”</p>
+            </li>
+            <li class="step" data-reveal="grow" style="--i:1">
+                <div class="step-icon" aria-hidden="true">
+                    <span class="step-badge">2</span>
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1 2 2 2 4a4 4 0 0 1-1 2.6"/><path d="M12 2a4 4 0 0 0-4 4c0 1-2 2-2 4a6 6 0 0 0 6 6h0a6 6 0 0 0 4-1.5"/><path d="M12 22v-6M9 13l3 3 3-3"/></svg>
+                </div>
+                <h3>Gemma diagnoses</h3>
+                <p>The AI model runs right on the laptop and reads the signs of disease the way an expert would.</p>
+                <p class="step-eg">Likely cassava mosaic disease — a common viral infection</p>
+            </li>
+            <li class="step" data-reveal="grow" style="--i:2">
+                <div class="step-icon" aria-hidden="true">
+                    <span class="step-badge">3</span>
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3a9 9 0 1 0 9 9"/><path d="M16 3h5v5"/></svg>
+                </div>
+                <h3>Get a local remedy</h3>
+                <p>Clear, practical treatment you can act on today, using what's available in your community.</p>
+                <p class="step-eg">Uproot infected stems, use clean cuttings, plant resistant varieties</p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- ============ CROPS ============ -->
+    <section class="crops" id="crops">
+        <div class="section-head" data-reveal="wipe">
+            <h2 class="section-title">Built for the crops you grow</h2>
+            <p class="section-lede">Tuned for Southeast Nigerian soil, climate, and farming calendar — with the diseases that actually hit them.</p>
+        </div>
+        <ul class="crop-grid">
+            <li class="crop" data-reveal="pop" style="--i:0">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🌿</span><h3>Cassava</h3></div>
+                <p class="crop-issues">Mosaic virus · Bacterial blight · Mealybug</p>
+            </li>
+            <li class="crop" data-reveal="pop" style="--i:1">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🍠</span><h3>Yam</h3></div>
+                <p class="crop-issues">Anthracnose · Tuber rot · Leaf spot</p>
+            </li>
+            <li class="crop" data-reveal="pop" style="--i:2">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🌽</span><h3>Maize</h3></div>
+                <p class="crop-issues">Leaf rust · Streak virus · Stem borer</p>
+            </li>
+            <li class="crop" data-reveal="pop" style="--i:3">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🍅</span><h3>Tomato</h3></div>
+                <p class="crop-issues">Early &amp; late blight · Leaf curl · Blossom-end rot</p>
+            </li>
+            <li class="crop" data-reveal="pop" style="--i:4">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🌴</span><h3>Palm oil</h3></div>
+                <p class="crop-issues">Fusarium wilt · Ganoderma · Leaf spot</p>
+            </li>
+            <li class="crop" data-reveal="pop" style="--i:5">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🌾</span><h3>Rice</h3></div>
+                <p class="crop-issues">Rice blast · Bacterial blight · Sheath rot</p>
+            </li>
+            <li class="crop" data-reveal="pop" style="--i:6">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🍌</span><h3>Plantain</h3></div>
+                <p class="crop-issues">Black sigatoka · Bunchy top · Weevil borer</p>
+            </li>
+            <li class="crop" data-reveal="pop" style="--i:7">
+                <div class="crop-head"><span class="crop-emoji" aria-hidden="true">🌶️</span><h3>Pepper</h3></div>
+                <p class="crop-issues">Anthracnose · Bacterial wilt · Leaf curl</p>
+            </li>
+        </ul>
+        <p class="crops-note" data-reveal="up">Growing something else? Ask anyway — these are just the most common.</p>
+    </section>
+
+    <!-- ============ OFFLINE / TRUST ============ -->
+    <section class="offline" id="offline">
+        <div class="offline-inner">
+            <div class="offline-copy" data-reveal="wipe">
+                <h2 class="section-title light">Made for where the signal ends.</h2>
+                <p class="section-lede light">
+                    Everything runs on a laptop over your local WiFi. Nothing leaves the
+                    device — not your questions, not your crop photos.
+                </p>
+
+                <figure class="net-diagram" aria-label="The laptop runs Gemma and shares it to your phone over local WiFi — no internet involved">
+                    <svg viewBox="0 0 460 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <!-- Laptop -->
+                        <rect x="24" y="44" width="104" height="66" rx="8" stroke="#FCDDC6" stroke-width="2.5"/>
+                        <rect x="38" y="58" width="76" height="38" rx="3" fill="#FCDDC6" opacity="0.18"/>
+                        <path d="M14 116 H138 L128 128 H24 Z" fill="#FCDDC6" opacity="0.9"/>
+                        <text x="76" y="150" text-anchor="middle" fill="#FCDDC6" font-size="13" font-weight="600">Laptop · Gemma</text>
+                        <!-- WiFi arcs -->
+                        <g stroke="#8fb89a" stroke-width="3" stroke-linecap="round" opacity="0.9">
+                            <path d="M196 96 a26 26 0 0 1 68 0"/>
+                            <path d="M208 88 a17 17 0 0 1 44 0"/>
+                            <path d="M220 80 a8 8 0 0 1 20 0"/>
+                        </g>
+                        <circle cx="230" cy="100" r="4" fill="#8fb89a"/>
+                        <text x="230" y="150" text-anchor="middle" fill="#8fb89a" font-size="13" font-weight="600">Local WiFi</text>
+                        <!-- Phone -->
+                        <rect x="322" y="40" width="56" height="94" rx="12" stroke="#FCDDC6" stroke-width="2.5"/>
+                        <rect x="330" y="52" width="40" height="60" rx="3" fill="#FCDDC6" opacity="0.18"/>
+                        <circle cx="350" cy="123" r="3.5" fill="#FCDDC6"/>
+                        <text x="350" y="150" text-anchor="middle" fill="#FCDDC6" font-size="13" font-weight="600">Your phone</text>
+                        <!-- No-cloud mark -->
+                        <g transform="translate(408,54)" opacity="0.8">
+                            <path d="M6 16 h20 a7 7 0 0 0 1 -14 a10 10 0 0 0 -19 -1 a6 6 0 0 0 -2 15 Z" stroke="#c98b7a" stroke-width="2" fill="none"/>
+                            <path d="M2 2 L34 30" stroke="#c98b7a" stroke-width="2.5" stroke-linecap="round"/>
+                        </g>
+                        <text x="425" y="150" text-anchor="middle" fill="#c98b7a" font-size="12" font-weight="600">No cloud</text>
+                    </svg>
+                </figure>
+            </div>
+
+            <ul class="offline-features">
+                <li class="feature" data-reveal="up" style="--i:0">
+                    <span class="of-icon" aria-hidden="true">📴</span>
+                    <h3>Fully offline</h3>
+                    <p>Works after the one-time setup, with no internet forever after.</p>
+                </li>
+                <li class="feature" data-reveal="up" style="--i:1">
+                    <span class="of-icon" aria-hidden="true">🗣️</span>
+                    <h3>Speaks your language</h3>
+                    <p>English, Igbo, Yoruba or Hausa — it detects and replies in the same one.</p>
+                </li>
+                <li class="feature" data-reveal="up" style="--i:2">
+                    <span class="of-icon" aria-hidden="true">🔒</span>
+                    <h3>Private by design</h3>
+                    <p>Your data never leaves the laptop. No accounts, no cloud.</p>
+                </li>
+                <li class="feature" data-reveal="up" style="--i:3">
+                    <span class="of-icon" aria-hidden="true">📱</span>
+                    <h3>Install like an app</h3>
+                    <p>Add it to your phone's home screen and open it any time.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta-band" data-reveal="pop" style="--i:0">
+        <h2>Ask your first question now.</h2>
+        <p>It's already listening — no sign-up, no signal needed.</p>
+        <button class="btn btn-solid btn-lg" data-open-chat>Open FarmSense</button>
+    </section>
+
+    <footer class="site-footer">
+        <span class="brand-name">FarmSense</span>
+        <p>Offline AI farming assistant · Powered by Gemma 4 &amp; Ollama</p>
+    </footer>
+
+</main>
+
+<!-- ============ FLOATING CHAT ============ -->
+<button class="chat-fab" id="chat-fab" data-open-chat aria-label="Open FarmSense chat">
+    <svg class="fab-open" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span class="fab-pulse" aria-hidden="true"></span>
+</button>
+
+<div class="chat-scrim" id="chat-scrim" hidden></div>
+
+<section class="chat-panel" id="chat-panel" aria-label="FarmSense chat" aria-hidden="true">
+    <header class="chat-header">
+        <div class="chat-header-brand">
+            <span class="chat-avatar" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-7 7-8 0 5-3 8-7 8"/><path d="M11 20c0-6 3-11 9-13"/></svg>
+            </span>
+            <div>
+                <strong>FarmSense</strong>
+                <span class="chat-status"><i></i> Ready · offline</span>
+            </div>
+        </div>
+        <div class="chat-header-tools">
+            <button class="chat-close" id="chat-close" aria-label="Close chat">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="chat-messages" id="chat" role="log" aria-live="polite" aria-label="Conversation">
+        <div class="welcome-card" id="welcome">
+            <span class="welcome-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-7 7-8 0 5-3 8-7 8"/><path d="M11 20c0-6 3-11 9-13"/></svg>
+            </span>
+            <h2>How can I help your farm today?</h2>
+            <p>Describe a crop problem or upload a photo — I'll diagnose it for you.</p>
+            <p class="lang-hint">Ask in English, Igbo, Yoruba or Hausa — I'll reply in the same language.</p>
+            <div class="suggestions" role="list">
+                <button class="chip" role="listitem">My cassava leaves are turning yellow</button>
+                <button class="chip" role="listitem">Gịnị ka m ga-eme maka ọrịa ọka m?</button>
+                <button class="chip" role="listitem">Báwo ni mo ṣe lè tọ́jú àrùn tòmátì?</button>
+                <button class="chip" role="listitem">Yaya zan kula da cutar masara ta?</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="error-bar" role="alert">
+        <span id="error-msg">Could not reach Ollama. Make sure it is running on your laptop.</span>
+        <button id="error-close" aria-label="Dismiss error">✕</button>
+    </div>
+
+    <div id="image-preview-bar" aria-live="polite">
+        <img id="preview-thumb" src="" alt="Selected crop image" />
+        <span class="preview-label" id="preview-filename">image.jpg</span>
+        <button id="remove-image" aria-label="Remove image">✕</button>
+    </div>
+
+    <footer class="chat-input">
+        <button id="upload-btn" aria-label="Upload crop photo" title="Upload a crop photo">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </button>
+        <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp" aria-label="Select crop image" />
+        <textarea id="message-input" placeholder="Describe your crop problem…" rows="1" aria-label="Type your farming question" autocomplete="off"></textarea>
+        <button id="send-btn" aria-label="Send message" disabled>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
+        </button>
+    </footer>
+</section>
+
+<script src="/vendor/gsap.min.js"></script>
+<script src="/vendor/ScrollTrigger.min.js"></script>
+<script src="/config.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
